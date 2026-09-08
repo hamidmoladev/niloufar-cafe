@@ -1,0 +1,143 @@
+/* ===== صفحات داخلی دسته‌ها ===== */
+.category-page {
+  background: linear-gradient(to bottom, #150D10, #1a1013);
+  min-height: 100vh;
+}
+
+.category-page .app-shell {
+  padding-bottom: 4rem;
+}
+
+/* هدر صفحه دسته */
+.category-header {
+  padding: 1.5rem 0 2rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--paper);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background: rgba(226, 63, 147, .15);
+  border: 1px solid rgba(226, 63, 147, .4);
+  transition: background .3s, transform .3s, box-shadow .3s;
+  font-size: .9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.back-link:hover {
+  background: rgba(226, 63, 147, .3);
+  transform: translateX(-4px);
+  box-shadow: 0 6px 16px rgba(226, 63, 147, .3);
+}
+
+.category-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 1.2rem;
+  color: var(--paper);
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.category-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, var(--pink), var(--coral));
+  border-radius: 3px;
+}
+
+/* ===== لیست آیتم‌ها ===== */
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 1.5rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(33, 18, 23, .75);
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid rgba(242, 233, 228, .1);
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+  border-color: var(--coral);
+  box-shadow: 0 8px 25px rgba(226, 63, 147, .25);
+}
+
+/* عکس آیتم */
+.item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #2a151d;
+  border: 1px solid rgba(226, 63, 147, .3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.menu-item:hover .item-photo {
+  transform: scale(1.1);
+}
+
+/* جزئیات آیتم */
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.item-price {
+  color: var(--pink);
+  font-weight: 700;
+  font-size: .95rem;
+  display: inline-block;
+  background: rgba(226, 63, 147, .12);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(226, 63, 147, .2);
+}
+
+/* فوتر صفحه */
+.category-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: rgba(242, 233, 228, .5);
+  font-size: .8rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
